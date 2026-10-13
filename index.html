@@ -1,42 +1,48 @@
 <!doctype html>
 <html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#060c19"><title>PromptLab DE – KI Prompt Galerie</title><meta name="description" content="Kostenlose kreative KI-Bildprompts mit Beispielen zum Kopieren."><style>
-:root{font-family:Inter,system-ui,-apple-system,sans-serif;color:#f7f8ff;background:#0b1020}*{box-sizing:border-box}body{margin:0}header,main,footer{max-width:1120px;margin:auto;padding:24px}header{display:flex;justify-content:space-between;align-items:center;gap:12px}.brand{font-weight:900;font-size:24px}.brand span{color:#a78bfa}a{color:inherit;text-decoration:none}.channel{background:#22c55e;color:#062411;padding:12px 17px;border-radius:30px;font-weight:750}h1{font-size:clamp(34px,6vw,66px);line-height:1.08;margin:40px 0 15px}h1 span{color:#a78bfa}.intro{max-width:670px;color:#bac2d7;font-size:18px;line-height:1.65}.controls{display:flex;gap:12px;flex-wrap:wrap;margin:35px 0 24px}input{background:#1b243b;color:white;border:1px solid #39435a;border-radius:14px;padding:15px;min-width:230px;flex:1;font:inherit}.filters{display:flex;gap:8px;flex-wrap:wrap}button{cursor:pointer;font:inherit;border:0;border-radius:12px;padding:12px 16px;font-weight:700}.filter{background:#1b243b;color:#e5e7eb}.filter.active{background:#a78bfa;color:#100b22}.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}.card{background:#171f34;border:1px solid #2a3651;border-radius:22px;overflow:hidden}.art{height:230px;display:flex;align-items:center;justify-content:center;font-size:96px;background:linear-gradient(135deg,#45308d,#ea90a2)}.art.fantasy{background:linear-gradient(135deg,#145e61,#54b7b2)}.art.neon{background:linear-gradient(135deg,#162d67,#bb42b2)}.art.cartoon{background:linear-gradient(135deg,#377b4e,#d9bd5b)}.content{padding:20px}.tag{font-size:12px;color:#c4b5fd;text-transform:uppercase;letter-spacing:1px}.content h2{margin:8px 0;font-size:23px}.content p{color:#b6bfd3;line-height:1.5;min-height:48px}.copy{background:#a78bfa;color:#170e2b;width:100%}.more{margin-top:10px;background:#293651;color:white;width:100%}dialog{border:1px solid #49536b;border-radius:20px;background:#151d30;color:white;width:min(720px,95vw);max-height:85vh;padding:25px}dialog::backdrop{background:#000b}dialog pre{white-space:pre-wrap;overflow-wrap:anywhere;max-height:45vh;overflow:auto;background:#0c1324;padding:20px;border-radius:12px;line-height:1.6}.close{float:right;background:#303b56;color:white}footer{color:#9ca9c4;text-align:center;margin-top:70px}@media(max-width:550px){header{padding:18px}.brand{font-size:20px}.channel{font-size:12px;padding:10px}main{padding:18px}h1{margin-top:20px}}
-
-/* PromptLab DE – Brand refresh: midnight, electric blue, cyan, violet */
-:root{color:#f4f7ff;background:#060b17}
-body{background:radial-gradient(ellipse 85% 520px at 50% 0%,#132d59 0%,#0b1730 48%,#060b17 100%);min-height:100vh}
-header{max-width:1180px;padding-top:26px;padding-bottom:22px;border-bottom:1px solid #20365a}
-.brand{display:flex;align-items:center;gap:12px;letter-spacing:.02em;font-size:24px;text-shadow:0 0 25px #1676ff35}
-.brand img{width:58px;height:58px;object-fit:contain;filter:drop-shadow(0 0 12px #167fff88)}
-.brand span{color:#27a8ff}
-.channel{background:linear-gradient(110deg,#0678ef,#874dff);color:white;box-shadow:0 5px 24px #0769ff40}
-main{max-width:1180px}
-h1{font-weight:900;letter-spacing:-.055em;text-wrap:balance}
-h1 span{background:linear-gradient(100deg,#03d7ff 5%,#348fff 52%,#b55bff);-webkit-background-clip:text;background-clip:text;color:transparent}
-.intro{color:#b9cce7}
-.controls{margin-top:40px}
-input{background:#0d1b34;border:1px solid #254b83;outline:none}
-input:focus{border-color:#22a9ff;box-shadow:0 0 0 3px #168cff30}
-.filter{background:#101d36;color:#c7d9f6;border:1px solid #25416e}
-.filter.active{background:linear-gradient(120deg,#087dff,#8b49ff);color:white;border-color:#529bff}
-.card{background:linear-gradient(155deg,#13233e,#0a1529);border:1px solid #24436d;box-shadow:0 12px 30px #0005;transition:transform .2s,border-color .2s}
-.card:hover{transform:translateY(-4px);border-color:#3c91ff}
-.art{background:linear-gradient(130deg,#0b4a92,#241854 60%,#8731bd);border-bottom:1px solid #36578a}
-.art.fantasy{background:linear-gradient(125deg,#102e66,#216eae,#682ea5)}
-.art.neon{background:linear-gradient(125deg,#0a2452,#2155b6,#a028b5)}
-.art.cartoon{background:linear-gradient(125deg,#063d70,#145c9c,#753ab4)}
-.tag{color:#56c9ff}
-.content p{color:#bac9e3}
-.copy{background:linear-gradient(100deg,#008cff,#794aff);color:white;box-shadow:0 6px 22px #0566ff25}
-.more{background:#162a4c;color:#dbeaff;border:1px solid #2a5184}
-button:hover{filter:brightness(1.13)}
-dialog{background:#0b1930;border:1px solid #37629d}
-dialog pre{background:#071123}
-.close{background:#1a3154}
-footer{color:#90aacd}
-.hero-eyebrow{color:#57c6ff;letter-spacing:.19em;text-transform:uppercase;font-size:12px;font-weight:800;margin-top:32px}
-@media(max-width:550px){.brand{font-size:18px;gap:7px}.brand img{width:44px;height:44px}header{padding:15px}.hero-eyebrow{margin-top:20px}}
-</style></head><body><header><div class="brand"><img src="assets/promptlab-logo.svg" alt="PromptLab DE Logo" width="58" height="58">PROMPT<span>LAB DE</span></div><a class="channel" href="https://whatsapp.com/channel/0029VbDMwS4FHWqAEJRmZs0n" target="_blank" rel="noopener">WhatsApp-Kanal ↗</a></header><main><div class="hero-eyebrow">Die Community für kreative Bildverarbeitung</div><h1>Dein nächstes Bild<br><span>beginnt mit einem Prompt.</span></h1><p class="intro">Entdecke kreative KI-Bildprompts. Sieh dir Beispiele an, kopiere deinen Favoriten und verwandle deine Fotos in etwas Besonderes.</p><div class="controls"><input id="search" placeholder="🔎 Prompts durchsuchen …" aria-label="Prompts durchsuchen"><div class="filters" id="filters"></div></div><div class="gallery" id="gallery"></div><p id="empty" hidden>Keine passenden Prompts gefunden.</p></main><dialog id="detail"><button class="close" onclick="document.getElementById('detail').close()">✕</button><h2 id="detailTitle"></h2><p id="detailDesc"></p><pre id="detailPrompt"></pre><button class="copy" id="detailCopy">📋 Prompt kopieren</button></dialog><footer>© PromptLab DE · Kreativität trifft KI · <a href="https://whatsapp.com/channel/0029VbDMwS4FHWqAEJRmZs0n">Mehr auf WhatsApp ↗</a></footer><script>
+:root{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#eaf0f8;background:#0b1220;font-synthesis:none}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#0b1220;min-height:100vh}
+a{color:inherit;text-decoration:none}button,input{font:inherit}button{cursor:pointer}
+header{border-bottom:1px solid #233044;background:#101a2b}
+.header-inner{max-width:1160px;margin:auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-size:20px;font-weight:800;letter-spacing:-.03em}
+.brand img{width:44px;height:44px}.brand span{color:#6ab7f5}
+.channel{background:#172a42;color:#d9eafd;border:1px solid #315075;border-radius:9px;padding:11px 16px;font-weight:650;font-size:14px}
+.channel:hover{background:#1e3958}
+main{max-width:1160px;margin:auto;padding:42px 24px 70px}
+.hero{padding:28px 0 38px;border-bottom:1px solid #233044}
+.hero-eyebrow{color:#7dbcf2;text-transform:uppercase;letter-spacing:.13em;font-size:12px;font-weight:800;margin-bottom:16px}
+h1{font-size:clamp(34px,5vw,56px);line-height:1.13;letter-spacing:-.055em;margin:0 0 19px;font-weight:800;max-width:820px}
+h1 span{color:#80c6fa}.intro{font-size:17px;color:#a8b8cd;line-height:1.7;max-width:690px;margin:0}
+.section-heading{margin:38px 0 8px;font-size:24px;letter-spacing:-.035em}
+.section-desc{color:#93a6bd;margin:0 0 25px;line-height:1.6}
+.controls{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:24px 0 26px}
+input{background:#121e30;color:#fff;border:1px solid #32435b;border-radius:10px;padding:14px 16px;min-width:220px;flex:1;outline:none}
+input:focus{border-color:#78bff7;box-shadow:0 0 0 3px #3a8ed52c}
+.filters{display:flex;gap:7px;flex-wrap:wrap}
+.filter{border:1px solid #2c4059;background:#142238;color:#bdcee0;border-radius:8px;padding:10px 13px;font-size:13px;font-weight:650}
+.filter.active{background:#235a8c;color:#fff;border-color:#3b82bd}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(275px,1fr));gap:22px}
+.card{background:#121e30;border:1px solid #2a3b52;border-radius:13px;overflow:hidden;display:flex;flex-direction:column}
+.art{height:218px;background:#192c42;display:block;overflow:hidden}
+.art img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .25s}
+.card:hover .art img{transform:scale(1.025)}
+.content{padding:21px;display:flex;flex-direction:column;flex:1}
+.tag{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#83c3f6}
+.content h2{font-size:20px;letter-spacing:-.025em;margin:10px 0}
+.content p{color:#9eb0c6;line-height:1.6;margin:0 0 22px;flex:1;font-size:14px}
+.copy,.more{border-radius:8px;width:100%;padding:12px 14px;font-weight:700;font-size:14px}
+.copy{background:#2878b6;color:#fff}.copy:hover{background:#358acb}
+.more{background:transparent;border:1px solid #37516e;color:#d6e7f7;margin-top:9px}
+.more:hover{background:#1a2d46}
+dialog{background:#101c2e;color:#eaf0f8;border:1px solid #38506a;border-radius:14px;width:min(720px,95vw);max-height:85vh;padding:25px}
+dialog::backdrop{background:#020814d9}
+dialog pre{white-space:pre-wrap;overflow-wrap:anywhere;max-height:45vh;overflow:auto;background:#0b1422;padding:20px;border-radius:10px;line-height:1.65;color:#c7d5e7}
+.close{float:right;border:1px solid #344960;background:#18283d;color:white;border-radius:8px;padding:8px 12px}
+footer{border-top:1px solid #233044;padding:26px 24px;text-align:center;color:#8498b0;font-size:13px}
+.preview-note{font-size:12px;color:#8098b4;margin:0 0 15px}
+@media(max-width:600px){.header-inner{padding:14px 16px}.brand{font-size:17px}.brand img{width:38px;height:38px}.channel{padding:10px;font-size:12px}main{padding:24px 16px 50px}.hero{padding:16px 0 30px}.controls{align-items:stretch}.filters{width:100%}.filter{flex:0 0 auto}.art{height:210px}}
+</style></head><body><header><div class="header-inner"><div class="brand"><img src="assets/promptlab-logo.svg" alt="PromptLab DE Logo" width="58" height="58">PROMPT<span>LAB DE</span></div><a class="channel" href="https://whatsapp.com/channel/0029VbDMwS4FHWqAEJRmZs0n" target="_blank" rel="noopener">WhatsApp-Kanal ↗</a></div></header><main><section class="hero"><div class="hero-eyebrow">Die Community für kreative Bildverarbeitung</div><h1>Dein nächstes Bild<br><span>beginnt mit einem Prompt.</span></h1><p class="intro">Entdecke kreative KI-Bildprompts. Sieh dir Beispiele an, kopiere deinen Favoriten und verwandle deine Fotos in etwas Besonderes.</p></section><h2 class="section-heading">Prompt-Bibliothek</h2><p class="section-desc">Entdecke Bildideen und kopiere die vollständige Anleitung mit einem Klick.</p><div class="controls"><input id="search" placeholder="🔎 Prompts durchsuchen …" aria-label="Prompts durchsuchen"><div class="filters" id="filters"></div></div><p class="preview-note">Vorschaubilder sind eigens erstellte Illustrationen und keine fotorealistischen Vorher-Nachher-Nachweise.</p><div class="gallery" id="gallery"></div><p id="empty" hidden>Keine passenden Prompts gefunden.</p></main><dialog id="detail"><button class="close" onclick="document.getElementById('detail').close()">✕</button><h2 id="detailTitle"></h2><p id="detailDesc"></p><pre id="detailPrompt"></pre><button class="copy" id="detailCopy">📋 Prompt kopieren</button></dialog><footer>© PromptLab DE · Kreativität trifft KI · <a href="https://whatsapp.com/channel/0029VbDMwS4FHWqAEJRmZs0n">Mehr auf WhatsApp ↗</a></footer><script>
 const universal="Verwandle alle Personen auf dem hochgeladenen Foto in hochwertige, fotorealistische LEGO-inspirierte 3D-Sammelfiguren. Übernimm Anzahl, Größenverhältnisse, Frisuren, Brillen, Bärte, Gesichtsausdrücke, Kleidung, Schmuck und Accessoires möglichst originalgetreu. Behalte Körperhaltungen und Interaktionen bei. Verwende typische LEGO-Gesichter, glänzende Kunststoffoberflächen, charakteristische Hände, bewegliche Gelenke und plastisch modellierte Haare. Erweitere die Bildkomposition um einen wunderschönen, zur Stimmung passenden Hintergrund. Filmische Beleuchtung, realistische Schatten, sanfte Reflexionen, räumliche Tiefenwirkung, professionelle 3D-Fotografie, 4K-Optik. Alle Figuren vollständig von Kopf bis Fuß. Hochformat 4:5. Keine zusätzlichen Personen, keine Texte, keine Wasserzeichen, kein eingeblendetes Referenzfoto.";
 const prompts=[
 {id:"lego-welt",title:"Dein Foto als LEGO-Welt",category:"3D",emoji:"🧱",desc:"Verwandle Menschen in detailreiche Sammelfiguren mit passender Umgebung.",prompt:universal},
@@ -46,7 +52,7 @@ const prompts=[
 {id:"tiere",title:"Tiere als 3D-Cartoon",category:"Cartoon",emoji:"🦙",desc:"Verwandle dein Tierfoto in eine charmante dreidimensionale Cartoon-Szene.",prompt:"Verwandle das Tier auf dem hochgeladenen Foto in eine hochwertige niedliche 3D-Cartoon-Figur. Bewahre Fellfarbe, Muster, Proportionen und charakteristische Merkmale. Setze das Tier in eine passende verspielte Landschaft mit sanftem Sonnenlicht, lebendigen Farben und weicher Tiefenschärfe. Filmreife 3D-Qualität, 4K, Hochformat 4:5, keine Schrift."}
 ];
 let category="Alle";const gallery=document.getElementById("gallery"),search=document.getElementById("search");const cats=["Alle",...new Set(prompts.map(p=>p.category))];document.getElementById("filters").innerHTML=cats.map(c=>'<button class="filter'+(c==="Alle"?" active":"")+'" data-cat="'+c+'">'+c+'</button>').join("");document.getElementById("filters").onclick=e=>{const b=e.target.closest("button");if(!b)return;category=b.dataset.cat;document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x===b));render()};search.oninput=render;
-function render(){let q=search.value.toLowerCase().trim(),list=prompts.filter(p=>(category==="Alle"||p.category===category)&&(p.title+" "+p.desc+" "+p.category).toLowerCase().includes(q));gallery.innerHTML=list.map(p=>'<article class="card"><div class="art '+(p.category==="Fantasy"?"fantasy":p.category==="Cinematic"?"neon":p.category==="Cartoon"?"cartoon":"")+'" role="img" aria-label="Illustratives Symbol">'+p.emoji+'</div><div class="content"><span class="tag">'+p.category+'</span><h2>'+p.title+'</h2><p>'+p.desc+'</p><button class="copy" data-copy="'+p.id+'">📋 Prompt kopieren</button><button class="more" data-open="'+p.id+'">Prompt ansehen →</button></div></article>').join("");document.getElementById("empty").hidden=!!list.length}
+function render(){let q=search.value.toLowerCase().trim(),list=prompts.filter(p=>(category==="Alle"||p.category===category)&&(p.title+" "+p.desc+" "+p.category).toLowerCase().includes(q));gallery.innerHTML=list.map(p=>'<article class="card"><div class="art"><img loading="lazy" src="assets/'+p.id.replace('lego-welt','lego-world').replace('lego-studio','lego-studio').replace('fantasy','fantasy').replace('neon','neon').replace('tiere','tiere')+'.svg" alt="Illustration: '+p.title+'"></div><div class="content"><span class="tag">'+p.category+'</span><h2>'+p.title+'</h2><p>'+p.desc+'</p><button class="copy" data-copy="'+p.id+'">📋 Prompt kopieren</button><button class="more" data-open="'+p.id+'">Prompt ansehen →</button></div></article>').join("");document.getElementById("empty").hidden=!!list.length}
 async function copy(t,b){try{await navigator.clipboard.writeText(t);const old=b.textContent;b.textContent="✓ Kopiert";setTimeout(()=>b.textContent=old,1800)}catch{window.prompt("Prompt kopieren:",t)}}
 gallery.onclick=e=>{const b=e.target.closest("button");if(!b)return;let p=prompts.find(p=>p.id===(b.dataset.copy||b.dataset.open));if(!p)return;if(b.dataset.copy)copy(p.prompt,b);else{document.getElementById("detailTitle").textContent=p.title;document.getElementById("detailDesc").textContent=p.desc;document.getElementById("detailPrompt").textContent=p.prompt;document.getElementById("detailCopy").onclick=()=>copy(p.prompt,document.getElementById("detailCopy"));document.getElementById("detail").showModal();history.replaceState(null,"","#"+p.id)}};render();const initial=prompts.find(p=>"#"+p.id===location.hash);if(initial){setTimeout(()=>{const b=document.querySelector('[data-open="'+initial.id+'"]');b?.click()},100)}
 </script></body></html>
